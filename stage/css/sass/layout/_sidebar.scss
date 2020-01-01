@@ -12,5 +12,76 @@
         &.no-sidebar {
             left: -250px;
         }
+        .logo-area {
+            font-weight: bold;
+            font-size: 26px;
+            margin-bottom: 30px;
+        }
+        .links-area {
+            li {
+                a {
+                    color: #ccc;
+                    padding: 10px 20px;
+                    display: block;
+                    &:hover {
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                    transition: 0.3s;
+                }
+            }
+            > li > a {
+                color: #fff;
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    border: 2px solid #FFF;
+                    transform: translateY(-50%);
+                }
+                &:hover {
+                    padding-left: 25px;
+                }
+                .fa-angle-right {
+                    float: right;
+                    position: relative;
+                    top: 4px;
+                    transition: 0.3s;
+                    &.down {
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+            .child-links {
+                display: none;
+                position: relative;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 3px;
+                    width: 3px;
+                    height: 100%;
+                    background-color: #666;
+                }
+                a {
+                    position: relative;
+                    &:hover:before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 3px;
+                        width: 3px;
+                        height: 100%;
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
     }
 }
