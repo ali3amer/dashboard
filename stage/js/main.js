@@ -4,4 +4,3 @@ $(function () {
         $(".content-area, .sidebar").toggleClass("no-sidebar");
     });
 });
-var myMap = 1; 

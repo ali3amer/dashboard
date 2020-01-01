@@ -1,1 +1,1 @@
-var myMap=1;
+$(function(){"use strict";$(".toggle-sidebar").on("click",function(){$(".content-area, .sidebar").toggleClass("no-sidebar")})});var myMap=1;

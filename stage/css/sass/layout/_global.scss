@@ -9,7 +9,10 @@
         width: calc(100% - 250px);
         min-height: 100%;
         transition: .3s;
-        float: left;
+        float: right;
         will-change: width;
+        &.no-sidebar {
+            width: 100%;
+        }
     }
 }
