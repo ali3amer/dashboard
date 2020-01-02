@@ -25,3 +25,34 @@
                         | You Got Money
             .noti-footer.text-center: a(href='#') View All Notifications
         i.fa.fa-expand.fa-lg.toggle-fullscreen.header-icon
+
+
+    .dropdown.usermenu-container
+        .username#usermenu(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            img.avatar.arounded-circle(src="imgs/profile.png", alt="Avtar Img")
+            span.user Ali Amer
+            i.fa.fa-angle-down.fa-lg
+        .dropdown-menu.dropdown-menu-right(aria-labelledby='usermenu')
+            .user-info
+                h3 Ali Amer
+                p Premuim Member
+            hr
+            ul.activities-list.list-unstyled
+                li Added Comments
+                li Create Comments
+                li Create Post
+                li Added Images
+                hr
+                .row.usermenu-links
+                    .col
+                        .link-box
+                            i.fa.fa-gear.fa-lg.fa-fw
+                            span Settings
+                    .col
+                        .link-box
+                            i.fa.fa-user.fa-lg.fa-fw
+                            span Profile                    
+                    .col
+                        .link-box
+                            i.fa.fa-power-off.fa-lg.fa-fw
+                            span Logout
