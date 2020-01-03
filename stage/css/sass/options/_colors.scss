@@ -3,13 +3,21 @@ $themes: (
     blue-theme: (color: #2980b9),
     red-theme: (color: #c0392b),
     orange-theme: (color: #d35400),
-    purple-theme: (color: #8e44ad)
+    purple-theme: (color: #8e44ad),
+    black-theme: (color: #2c3e50)
 );
 
 @each $theme, $map in $themes {
     .#{$theme} {
+        $color: map-get($map, color);
         .page .page-head .page-title {
-            color: map-get($map, color);
+            color: $color;
+        }
+        .header .usermenu-container .dropdown-menu .user-info h3 {
+            color: $color;
+        }
+        .header .toggle-sidebar:hover {
+            color: $color;
         }
     } 
 }
